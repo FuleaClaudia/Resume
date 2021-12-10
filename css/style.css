@@ -1,0 +1,151 @@
+
+
+/*Global Style
+****************************/
+
+/*box model fix and should be used in any css file*/
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	color:#22223B;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	/*text-align: justify;*/
+}
+img {
+	width: 300px;
+
+}
+a{
+	color:#22223B;
+}
+a:hover{
+	color:#38040e;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+}
+h1{
+	font-size: 80px;
+
+}
+
+h2{
+	
+	font-size: 50px;
+}
+
+h1,h2{
+	font-family:  'Shalimar', cursive;
+	margin: 0;
+}
+
+h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.content-wrap{
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+h3 + p{
+	font-style: italic;
+}
+
+h3~p {
+	margin: 0;
+}
+/*Profile
+****************************/
+header{
+	background-color: #F2E9E4;
+	text-align: center;
+}
+
+
+
+/*Projects
+****************************/
+.projects{
+	background-color: #C9ADA7;
+
+
+}
+.project_item{
+	overflow: hidden;
+	border-bottom: 1px dashed black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.project_item img{
+	float: left;
+	margin-right: 20px; 
+}
+
+.project_item h3{
+	margin-top: 0;
+}
+/*Work experience
+****************************/
+.work_experience{
+	background-color: #9A8C98;
+}
+/*this is out grid container*/
+.job_item{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 20px; 
+}
+
+.job_summary{
+	padding-top: 10px;
+}
+
+/*Education
+****************************/
+.education{
+	background-image: url(../images/joanna-kosinska-unsplash.jpg);
+	background-size: cover;
+	background-position: top right;
+}
+
+/*Contant list
+***************************/
+footer{
+	background-color: #767a92;
+	text-align: center;
+
+}
+footer a{
+	/*background:#9A8C98;*/
+	color: white;
+	padding: 0px;
+	border-radius: 0px;
+}
+footer a:hover{
+	
+}
+
+.contact_list{
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.contact_list a{
+	padding: 15px;
+	display: inline-block;
+}
